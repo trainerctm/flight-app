@@ -8,3 +8,8 @@ jobs:
     steps:
       - name:  Say hello
         run: echo "Hello, world!"
+      - name: Multi-line bash
+        run:  | 
+          echo  "I am"
+          echo  "a multi-line"
+          echo  "script."
