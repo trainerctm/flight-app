@@ -20,4 +20,4 @@ jobs:
       runs-on:  ubuntu-slim
       steps:
          - name:  Say Goodbye
-           run:  echo "Good bye!"
+           run:  echo "Goodbye! ......"
