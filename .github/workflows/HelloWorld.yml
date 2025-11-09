@@ -21,3 +21,6 @@ jobs:
       steps:
          - name:  Say Goodbye
            run:  echo "Goodbye! ......"
+         - name: Event name
+           run: |
+             echo "Event name: ${{ github.event_name }}"
