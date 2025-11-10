@@ -26,6 +26,7 @@ jobs:
              echo "Event name: ${{ github.event_name }}"
 
   ubuntu-echo:
+    needs:  echo-goodbye
     runs-on:  ubuntu-latest
     steps:
       - name:  Show OS
@@ -34,6 +35,7 @@ jobs:
           echo  "Runner OS: $RUNNER_OS"
           
   windows-echo:
+      needs:  ubuntu-echo
       runs-on:  windows-latest
       steps:
         - name:  Show OS
